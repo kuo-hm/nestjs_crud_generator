@@ -33,8 +33,8 @@ const createDirectoryContents = async (templatePath, newProjectPath) => {
         .split(".")
         .map((name) => {
           if (name === "replace") return nameLowerFirst;
-          else if (name === "create-replace") return `create-${nameUpperFirst}`;
-          else if (name === "update-replace") return `update-${nameUpperFirst}`;
+          else if (name === "create-replace") return `create-${nameLowerFirst}`;
+          else if (name === "update-replace") return `update-${nameLowerFirst}`;
           else return name;
         })
         .join(".");
